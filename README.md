@@ -9,7 +9,7 @@
 A professional, full-stack open-source automation framework designed to streamline the creation of academic lab submissions, assignments, and coding practicals. 
 
 > **Live Demo (Tailored for SLIIT Students):** [dmlabs.kesaru.me](https://dmlabs.kesaru.me)
-> *(Note: This repository was originally created specifically for students at SLIIT (Malabe Uni) to automate their Discrete Mathematics lab sheets. It has since been generalized so that ANY student, educator, or university can tailor it to their own formats!)*
+> *(Note: This repository was originally created specifically for students at SLIIT to automate their Discrete Mathematics lab sheets. It has since been generalized so that ANY student, educator, or university can tailor it to their own formats!)*
 
 ![Frontend Preview](https://github.com/kesaruhasun/LabFlow-Public/blob/main/frontend/public/preview.png)
 
