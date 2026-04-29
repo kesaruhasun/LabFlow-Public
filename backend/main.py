@@ -145,12 +145,16 @@ PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT_ID", "your-project-id")
 LOCATION = "us-central1"
 
 try:
-    # Initializing the modern client with Vertex AI backend
-    client = genai.Client(vertexai=True, project=PROJECT_ID, location=LOCATION)
-    # Using the requested GeminI 2.5 Flash model
+    # 1. Generic Gemini API (using API Key)
+    # The client automatically picks up GEMINI_API_KEY from environment variables
+    client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+    
+    # 2. Vertex AI (Commented out - uncomment to use Google Cloud project backend)
+    # client = genai.Client(vertexai=True, project=PROJECT_ID, location=LOCATION)
+    
     MODEL_ID = "gemini-2.5-flash"
 except Exception as e:
-    print(f"Warning: GenAI Client not initialized. Check credentials. {e}")
+    print(f"Warning: GenAI Client not initialized. {e}")
     client = None
 
 @app.post("/api/generate")
