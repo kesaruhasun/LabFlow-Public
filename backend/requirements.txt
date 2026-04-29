@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-multipart
+google-genai
+google-cloud-storage
+PyPDF2
+python-docx
+nbformat
+nbclient
+nbconvert
+playwright
+Pillow
+tenacity
+httpx
+apscheduler
